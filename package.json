@@ -1,0 +1,45 @@
+{
+  "name": "gol",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/karma/bin/karma start",
+    "start": "brunch w -s"
+  },
+  "engines": {
+    "node": "=0.10.29"
+  },
+  "author": "Tim Meinhardt <tim.meinhardt@flobbymedia.de>",
+  "license": "Copyright 2014 Anton Mikulcic",
+  "dependencies": {
+    "coffee-script": "~1.7.1",
+    "dotenv": "~0.2.5",
+    "underscore": "~1.6.0",
+    "coffee-script-brunch": "~1.8.0",
+    "uglify-js-brunch": "~1.7.7",
+    "bower": "~1.3.2",
+    "brunch": "~1.7.13",
+    "javascript-brunch": "~1.7.1",
+    "css-brunch": "~1.7.0",
+    "jade-brunch": "~1.8.1",
+    "static-jade-brunch": "~1.7.0",
+    "jade": "~1.3.1",
+    "sass-brunch": "^1.8.1"
+  },
+  "devDependencies": {
+    "sinon-chai": "~2.5.0",
+    "chai": "~1.9.1",
+    "sinon": "~1.9.0",
+    "request": "~2.34.0",
+    "mocha": "~1.18.2",
+    "nodemon": "~1.0.17",
+    "karma-coffee-preprocessor": "~0.2.1",
+    "karma-chrome-launcher": "~0.1.3",
+    "karma-commonjs-preprocessor": "~0.1.1",
+    "karma-mocha": "~0.1.3",
+    "karma-spec-reporter": "0.0.12",
+    "karma-growl": "~0.1.0",
+    "karma-sinon-chai": "~0.1.5",
+    "karma": "~0.12.9"
+  }
+}

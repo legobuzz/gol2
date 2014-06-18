@@ -1,0 +1,20 @@
+{
+  "name": "onepacker_backend",
+  "version": "0.0.0",
+  "dependencies": {
+    "commonjs-require-definition": "~0.1.2",
+    "jquery": "~2.1.0",
+    "angular": "~1.2.15",
+    "angular-route": "~1.2.15",
+    "angular-bootstrap": "~0.10.0",
+    "angular-mocks": "~1.2.16",
+    "bootstrap": "~3.1.1",
+    "underscore": "~1.6.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "overrides": {}
+}
