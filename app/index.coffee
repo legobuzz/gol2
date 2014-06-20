@@ -17,4 +17,24 @@ angular.element(document).ready ->
 
 app.run ($rootScope, $location) ->
 
+	World = require 'models/world'
+	world = new World 5
+
+	$rootScope.world = world
+
+	world.toggleCellVitality 1, 3
+	world.toggleCellVitality 2, 3
+	world.toggleCellVitality 3, 3
+	world.toggleCellVitality 2, 2
+	world.toggleCellVitality 3, 2
+	world.toggleCellVitality 4, 2
+
+	setInterval(
+		->
+			world.nextStep()
+			console.log "step!"
+			$rootScope.$apply();
+		, 150
+	)
+
 module.exports = app

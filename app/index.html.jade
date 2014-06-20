@@ -18,7 +18,11 @@ html(lang="en")
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")</script)
 
   body
-    h1 Hello World {{1+1}}
+    h1 Hello World
+
+    ul
+      li(ng-repeat='cell in world.cells', ng-click='world.toggleCellVitality(cell.x, cell.y)')
+        {{cell.alive}}
 
     script(src="/js/vendor.js")
     script(src="/js/app.js")
