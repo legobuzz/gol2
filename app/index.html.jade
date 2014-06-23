@@ -18,11 +18,10 @@ html(lang="en")
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")</script)
 
   body
-    h1 Hello World
+    button(ng-click='startEvolution()') Start Evolution
 
-    ul
-      li(ng-repeat='cell in world.cells', ng-click='world.toggleCellVitality(cell.x, cell.y)')
-        {{cell.alive}}
+    ul.world
+      li.cell(class='cell-row-break-{{cell.x % 10 == 0}} cellbodyalive-{{cell.alive}}', ng-repeat='cell in world.cells', ng-click='world.toggleCellVitality(cell.x, cell.y)')
 
     script(src="/js/vendor.js")
     script(src="/js/app.js")
